@@ -76,19 +76,41 @@ Transform streams - File compressio  where you can write compressed data and rea
 
 
 
+PIPES
+*****************************************************************************************************************
+ 
+ 
+ tank            pipe
+  |-------------------------|
+                            |
+                            Tap
+ 
+ We are reading water from the tank and writin g it in the tap,
+In node js pipes are very similar.
+It takes a readable stream and connects it to a writeadle stram
+We use the pipe method on a readable stream to implement the functionality
+ 
+ 
+ 
+Pipe are a more efficnt way to 
+
+
+
+const fs = require("node:fs");
+
+const readableStream = fs.createReadStream("./file.txt",{
+    encoding :'utf-8',
+    highWaterMark:2,
+})
+
+const writeableStream = fs.createWriteStream("./file2.txt")
+
+readablestream.pipe(writeableStream)  // This will write the data in file.txtx to file2.txt
 
 
 
 
-
-
-
-
-
-
-
-
-
+CHAINING PIPES
 
 
 

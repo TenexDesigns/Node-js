@@ -66,6 +66,65 @@ The synchrous Blocking nature of javascrit is not benefitioal for writting apps
 We want non-Blocking asynchronous behaviou, which is made possible by a browser for front end and Node.js for backenf=d
 
 
+         IN NODE JS JAVASCRIOT IS ABLE TO RUN ASYNCRONOUSLY BECAUSE OF THE LIBUV LIBRAY
+****************************************************************************************************************
+    
+                  
+        This is what node js is made up of unde the hood          
+                  
+                node js  
+---------------------------------------         
+        1. JS libray                  |
+                                      |
+        2.c/c++ features              |
+                                      |
+        3.Dependecies                 |
+            (a) V8 engine             |
+            (b) libuv                 |         ----> This is the one enebling us to write asyncronous javascript in node js
+            (c) zlib                  |
+            (d) crypto                |
+            (d) etc                   |
+---------------------------------------         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
 
 
 
@@ -74,7 +133,7 @@ ASYNCCHROINUS JAVASCRIPT
 
 
     
-Executing code asynchronously in JavaScript means that the code doesn't block the execution of other code.
+Executing code asynchronously in JavaScript means that the code doesnt block the execution of other code.
 In traditional synchronous programming, code is executed sequentially, one line at a time, 
 and each line of code must complete before moving on to the next line. This can be problematic when dealing 
 with time-consuming tasks or operations that involve waiting for external resources.

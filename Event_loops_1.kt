@@ -57,14 +57,17 @@ will utilize its thread pool to run the task ensuring the main thread is not blo
 
 
 
+Under stanfing the event Lop cycle
+----------------------------------------------------------------------------
+Event loop is a loop that is up and running as long as your node js is running
+In every iteration of the loop , we come across six diffrent queues,
+Each queue holds one or more call back functions that need to be  excuted on the call statck
+The type of call back functions are diffrent for each quueu
 
 
 
 
-
-
-
-
+Under stanfing the event Lop cycle
 
 
 

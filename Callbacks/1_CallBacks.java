@@ -10,6 +10,23 @@ Callbacks are a fundamental concept in JavaScript, and they play a significant r
    - **Event Handling:** Callback functions are commonly used to respond to events, such as button clicks, form submissions, and keyboard input.
    - **Timeouts and Intervals:** In the browser and Node.js, callbacks are often used with `setTimeout` and `setInterval` functions for executing code after a specified delay.
 
+
+
+Parentheses and Callbacks:
+
+When passing a function as a callback, you typically do not use parentheses. Using parentheses (handleClick()) would immediately invoke the function
+   and assign its return value, not the function itself, to the event handler.
+
+// Incorrect: Invokes handleClick immediately and assigns its return value (undefined) to onClick
+<button onClick={handleClick()}>Click me</button>
+
+Correct usage is to pass the reference to the function without invoking it:
+
+// Correct: Passes a reference to handleClick, which will be invoked on button click
+<button onClick={handleClick}>Click me</button>
+
+   
+   
 ### Callbacks in Node.js:
 
 1. **Asynchronous I/O Operations:**

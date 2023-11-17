@@ -5,7 +5,7 @@ Callbacks are a fundamental concept in JavaScript, and they play a significant r
 1. **Definition:**
    - A callback is a function that is passed as an argument to another function and is executed after the completion of a particular task or responds to a particular event.
 Node.js utilizes an event-driven architecture, where events trigger the execution of callbacks. Callbacks are functions that are registered to be executed when an event occurs. 
-
+A callback function is a function that is passed as an argument to another function and is executed after the other function has finished executing.
    
 2. **Common Usage:**
    - **Asynchronous Operations:** Callbacks are extensively used in handling asynchronous operations, such as reading files, making API requests, and handling events.

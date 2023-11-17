@@ -1,3 +1,7 @@
+event -Events are changes in the state of the system, like a mouse click or a completed I/O operation.            Node.js has a built-in EventEmitter class that is used to bind event handlers to events. When an event occurs, the event handlers are called in the order they were registered
+
+
+
 Sure, here is a comprehensive explanation of events, event handlers, and their applications in both frontend and backend development with Node.js:
 
 ## Events and Event Handling

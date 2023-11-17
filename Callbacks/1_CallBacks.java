@@ -1,11 +1,15 @@
 Callbacks are a fundamental concept in JavaScript, and they play a significant role in various contexts, including Node.js, React, web development, and TypeScript. Here's an overview of callbacks and their common usage in different areas:
 
+event -Events are changes in the state of the system, like a mouse click or a completed I/O operation.            Node.js has a built-in EventEmitter class that is used to bind event handlers to events. When an event occurs, the event handlers are called in the order they were registered
+
 ### Callbacks in JavaScript:
 
 1. **Definition:**
    - A callback is a function that is passed as an argument to another function and is executed after the completion of a particular task or responds to a particular event.
 Node.js utilizes an event-driven architecture, where events trigger the execution of callbacks. Callbacks are functions that are registered to be executed when an event occurs. 
 A callback function is a function that is passed as an argument to another function and is executed after the other function has finished executing.
+
+
    
 2. **Common Usage:**
    - **Asynchronous Operations:** Callbacks are extensively used in handling asynchronous operations, such as reading files, making API requests, and handling events.
